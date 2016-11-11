@@ -2,7 +2,6 @@
 import Tkinter
 import tkMessageBox
 
-
 window = Tkinter.Tk()
 
 greeting = Tkinter.Label(window,
@@ -12,9 +11,7 @@ greeting.pack()
 entry_field = Tkinter.Entry(window)
 entry_field.pack()
 
-
-
-def check_number(): #spodaj preverimo stevilko
+def check_kilometre():
     kilometer = int(entry_field.get())
     milja = kilometer * 0.621371
 
@@ -23,11 +20,10 @@ def check_number(): #spodaj preverimo stevilko
 
 check_button = Tkinter.Button(window,
                               text="Pretvori kilometre v milje",
-                              command=check_number)
+                              command=check_kilometre)
 check_button.pack()
 
-
-def check_milje(): #spodaj preverimo stevilko
+def check_milje():
     milja = int(entry_field.get())
     kilometer = milja / 0.62137
 
